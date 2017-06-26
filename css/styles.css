@@ -46,13 +46,45 @@ header{
 section{
     height: 100vh!important;
     width: 100%;
+    padding: 100px 200px;
     /*To avoid that padding blass to height*/
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-footer{    
+section div.seccion-header h1,
+section div.seccion-header h3{
+    font-family: 'Playfair Display',serif;
+    font-weight: 400;
+}
+
+section div.seccion-header h1 span,
+section div.seccion-header h3 span{
+    display: block;
+}
+
+section div.seccion-header h1{
+    line-height: 80px;
+    font-size: 80px;
+}
+
+section div.seccion-header h3{
+    margin: 30px 0 0;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+section div.seccion-header p{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    color: #959ba0;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+
+footer{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -106,7 +138,7 @@ footer .footer-container div{
 ===============================================
 */
 
-section.home{    
+section.home{
     background: transparent;
     /*equivalent to layout-column mix with aling-center*/
     display: flex;
@@ -171,15 +203,29 @@ section.home div.home-presentation p.description{
 
 /*
 ===============================================
-            1. CSS About me
+            1. CSS Skills
 ===============================================
 */
 
-section.work-experience{
+section.skill{    
     background: #1f282e;
+    color: rgba(255,255,255,.87);
 }
 
+section.skill div.seccion-header{
+}
 
+section.skill div.seccion-content{
+    padding: 0 48px;
+}
+
+section.skill div.technology-logos{
+}
+
+section.skill div.technology-logos img{
+    width: 45px;
+    margin-left: 8px;
+}
 /*
 ===============================================
             1. Media Queries
